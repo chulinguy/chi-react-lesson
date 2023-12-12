@@ -8,7 +8,7 @@ const PageReactMagic = () => (
     <h1>Let's look at 2 magical things React does</h1>
 
     <section>
-      <div>{scriptStr}</div>
+      <div>{scriptStr1}</div>
 
       <div dangerouslySetInnerHTML={{ __html: scriptStr2 }} />
     </section>
