@@ -7,7 +7,13 @@ const Input = ({ value, setValue }) => (
   <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
 );
 
-const ComplexModal = ({ children, setIsModalOpen, value, setValue., header }) => {
+const ComplexModal = ({
+  children,
+  setIsModalOpen,
+  value,
+  setValue,
+  header,
+}) => {
   return (
     <div className="silhouette" onClick={() => setIsModalOpen(false)}>
       <div className="popup" onClick={(e) => e.stopPropagation()}>
@@ -31,7 +37,7 @@ const SimpleModal = ({ children, setIsModalOpen }) => {
 const ChildrenOrNotExample = () => {
   const [isComplexModalOpen, setIsComplexModalOpen] = useState(false);
   const [isSimpleModalOpen, setIsSimpleModalOpen] = useState(false);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   return (
     <section>

@@ -56,10 +56,10 @@ const LeakedRenderExample = () => {
         }}
       >
         {Object.entries(falseyValues).map(([name, value]) => (
-          <>
-            {value && <p key={name}>{name} gets rendered !</p>}
+          <Fragment key={name}>
+            {value && <p>{name} gets rendered !</p>}
             <br />
-          </>
+          </Fragment>
         ))}
         <div style={veilStyle} onClick={() => setOpacity(0)}>
           Click here to unveil the answer

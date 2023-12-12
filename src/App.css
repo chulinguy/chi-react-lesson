@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  width: 100vw;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -47,4 +49,16 @@ button {
 
 section {
   background: #171717;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
 }
