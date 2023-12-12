@@ -1,8 +1,35 @@
-# React + Vite
+# Concepts to cover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React refresher
 
-Currently, two official plugins are available:
+  - ✓ React Magic
+    - ✓ auto-sanitizing
+    - ✓ synthetic events
+  - Thinking in React (https://react.dev/learn/thinking-in-react)
+  - ✓ React Rerendering
+  - ✓ React Ref
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Best practices
+
+  - ✓ Eslint-plugin-react
+
+    - ✓ How React handles falsey values (react/jsx-no-leaked-render)
+    - ✓ Do not define a component in another component (react/no-unstable-nested-components)
+    - ✓ object as default prop can trigger unnecessary rerenders (react/no-object-type-as-default-prop)
+
+  - Readability
+
+    - ✓ Componentization with children
+    - ✓ Keep rendering logic in render call
+
+  - ✓ Performance
+    - lazy loading
+      - React.lazy + React.Suspense
+    - Use Preact + preact/compat
+      - React main.js: 127.18 kB
+      - Preact main.js: 94.46 kB
+    - ✓ UseEffect clean-up
+    - ✓ UseEffect vs onClick
+
+- Advanced Techniques
+  - HOC vs render prop vs hooks
