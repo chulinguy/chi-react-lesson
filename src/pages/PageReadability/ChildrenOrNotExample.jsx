@@ -43,9 +43,17 @@ const ChildrenOrNotExample = () => {
     <section>
       <h2>Let's look at these 2 modal codes and discuss readability</h2>
 
+      <button type="button" onClick={() => setIsComplexModalOpen(true)}>
+        Click to open complex modal
+      </button>
+
+      <button type="button" onClick={() => setIsSimpleModalOpen(true)}>
+        Click to open simple modal
+      </button>
+
       {isComplexModalOpen && (
         <ComplexModal
-          header="Complex Modal"
+          header={`Complex Modal value: ${value}`}
           setIsModalOpen={setIsComplexModalOpen}
           value={value}
           setValue={setValue}
@@ -54,7 +62,7 @@ const ChildrenOrNotExample = () => {
 
       {isSimpleModalOpen && (
         <SimpleModal setIsModalOpen={setIsSimpleModalOpen}>
-          <h3>Simple Modal</h3>
+          <h3>Simple Modal value: {value}</h3>
           <Input value={value} setValue={setValue} />
         </SimpleModal>
       )}

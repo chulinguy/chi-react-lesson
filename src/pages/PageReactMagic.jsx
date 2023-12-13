@@ -1,7 +1,7 @@
 import React from "react";
 
-const scriptStr1 = '<script>console.log("should not print")</script>';
-const scriptStr2 = '<script>console.log("should print")</script>';
+const scriptStr1 = "<span>str 1</span>";
+const scriptStr2 = "<span>str 2</span>";
 
 const PageReactMagic = () => (
   <div className="PageReactMagic">
