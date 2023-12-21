@@ -45,7 +45,7 @@ const RewriteComponent = () => {
 
   return (
     <div className="RewriteComponent">
-      <button type="button" onClick={() => setIsShowingStuff(true)}>
+      <button type="button" onClick={clickHandler}>
         Click me to render stuff
       </button>
 

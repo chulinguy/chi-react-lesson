@@ -24,6 +24,13 @@ const ComplexModal = ({
   );
 
   // specialization
+
+  // return (
+  //   <SimpleModal setIsModalOpen={setIsSimpleModalOpen}>
+  //     <h3>Simple Modal value: {value}</h3>
+  //     <Input value={value} setValue={setValue} />
+  //   </SimpleModal>
+  // );
 };
 
 const SimpleModal = ({ children, setIsModalOpen }) => {
