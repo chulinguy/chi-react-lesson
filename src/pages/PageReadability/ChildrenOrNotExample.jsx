@@ -22,6 +22,8 @@ const ComplexModal = ({
       </div>
     </div>
   );
+
+  // specialization
 };
 
 const SimpleModal = ({ children, setIsModalOpen }) => {

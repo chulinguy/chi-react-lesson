@@ -29,6 +29,8 @@ const PageRouter = () => {
         <Route path="/readability" element={<PageReadability />} />
 
         <Route path="/performance" element={<PagePerformance />} />
+
+        <Route path="/" exact element={null} />
       </Routes>
     </Suspense>
   );

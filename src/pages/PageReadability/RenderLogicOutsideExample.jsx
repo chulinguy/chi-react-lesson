@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
+const logicFunction = () => !![];
+
 const RenderLogicOutsideComponent = () => {
   const [isShowingStuff, setIsShowingStuff] = useState(false);
 
   const isStuffValid = 55 % 10 > 2;
-  const isStuffCustom = !![];
+  const isStuffCustom = logicFunction();
 
   let stuff = <li>Default stuff</li>;
 
@@ -29,6 +31,7 @@ const RenderLogicOutsideComponent = () => {
 const RewriteComponent = () => {
   const [isShowingStuff, setIsShowingStuff] = useState(false);
 
+  // handlers
   const clickHandler = () => {
     if (isShowingStuff) setIsShowingStuff(false);
     else {
@@ -37,7 +40,8 @@ const RewriteComponent = () => {
     }
   };
 
-  const str = !![] ? "Default stuff" : "Custom Stuff";
+  // basic rendering variables
+  const str = logicFunction() ? "Default stuff" : "Custom Stuff";
 
   return (
     <div className="RewriteComponent">

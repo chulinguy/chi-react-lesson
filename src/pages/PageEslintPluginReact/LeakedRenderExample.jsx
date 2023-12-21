@@ -43,10 +43,11 @@ const LeakedRenderExample = () => {
         ))}
       </ol>
 
-      <p>
-        When we write conditional rendering with this expression "(value) &&
-        {" <some HTML />"}, which falsey value will cause incorrect renders ???"
-      </p>
+      <div>
+        When we write conditional rendering with this expression
+        <pre>value && {"<some HTML />"}</pre>, which falsey value will cause
+        incorrect renders ???"
+      </div>
 
       <ul
         style={{

@@ -5,9 +5,9 @@ import CleanupExample from "./CleanupExample";
 const PagePerformance = () => {
   return (
     <div className="PagePerformance">
-      <CleanupExample />
-
       <UseEffectVsOnClickExample />
+
+      <CleanupExample />
     </div>
   );
 };

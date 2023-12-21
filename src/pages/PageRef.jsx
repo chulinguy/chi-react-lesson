@@ -49,6 +49,8 @@ const PageRef = () => {
     h3Ref.current.style.color = "red";
   };
 
+  console.log("rendering PageRef");
+
   return (
     <section>
       <button type="button" onClick={() => setRandomNumber(Math.random())}>

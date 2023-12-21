@@ -2,6 +2,11 @@
 
 - React refresher
 
+  - What is React opinionated about?
+
+    - rendering: props down (one-way data flow)
+    - React team recommends NextJS
+
   - ✓ React Magic
     - ✓ auto-sanitizing
     - ✓ synthetic events
@@ -24,12 +29,15 @@
 
   - ✓ Performance
     - lazy loading
-      - React.lazy + React.Suspense
+      - React.lazy + React.Suspense ... ABF example
     - Use Preact + preact/compat
       - React main.js: 127.18 kB
       - Preact main.js: 94.46 kB
-    - ✓ UseEffect clean-up
     - ✓ UseEffect vs onClick
+    - ✓ UseEffect clean-up
 
-- Advanced Techniques
-  - HOC vs render prop vs hooks
+- Advanced topics
+  - Provider + hooks > HOC > Render Prop
+  - How to avoid Prop Drilling?
+    - component composition (https://felixgerschau.com/react-component-composition/)
+    - useContext hook / React-Redux (https://dev.to/javmurillo/react-context-all-in-one-54ck)
